@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-actioncable"
+VERSION=5.1.4
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Action Cable extension"
+DESCRIPTION="Structure many real-time application concerns into channels over
+a single WebSocket connection."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_actioncable_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_actioncable_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
